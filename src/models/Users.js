@@ -1,7 +1,7 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../utils/connection");
 // En Mayúsculas y singular      // en minúsculas y singular
-const Canciones = sequelize.define("cancion", {
+const Users = sequelize.define("user", {
   // Definimos las columnas aquí
   first_name: {
     type: DataTypes.STRING(150),
@@ -21,4 +21,4 @@ const Canciones = sequelize.define("cancion", {
   },
 });
 
-module.exports = Canciones;
+module.exports = Users;
